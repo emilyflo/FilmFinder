@@ -5,23 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>Film Finder</title>
 </head>
 
 <body>
     
-    <header>
-        Film Finder
-    </header>
+    <header>Film Finder</header>
     
     <!-- search for a film -->
-    <form id="search-box">
-        <input type="text" id="search-text" placeholder="find a film">
-        <button type="submit" onClick="submitForm()">search</button>
+    <form class="search-box">
+        <input type="text" class="search-text" placeholder="Find a Film" required>
+        <button type="submit" class="search-button" onClick="submitForm()"><i class="fa fa-search"></i></button>
     </form>
     
     <!-- display films from search -->
     <div id="films"></div>
+
+    <footer>
+        <span>films brought to you by </span>
+        <img src="./src/TMDB-logo.svg" id="TMDB"/>
+    </footer>
     
     <script src="index.js" defer></script>
 </body>
