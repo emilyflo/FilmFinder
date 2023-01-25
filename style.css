@@ -1,0 +1,119 @@
+body {
+    background-color: #0d253f;
+    margin: 0;
+}
+
+header {
+    font-family: 'Righteous';
+    text-align: center;
+    font-size: 70pt;
+    color: #eee9E5;
+    background-image: linear-gradient(to right, #90cea1, #74ccac, #56c8ba, #33c4c8, #00bed6, #00adcf, #009dc6, #198cbb, #1d709b, #1b557c, #163c5d, #0d253f);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.search-box {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+input {
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: 'Helvetica';
+    background-color: #eee9e5;
+    color: #0d253f;
+    border-radius: 10px;
+    padding: 5px;
+    border: 0;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    height: 2rem;
+}
+
+input[type=text]:focus {
+    width: 40%;
+}
+
+input:hover {
+    background-color: #74ccac;
+}
+
+.search-button {
+    background: transparent;
+    border-radius: 50%;
+    border: 0;
+    color: #eee9e5;
+    font-size: 1.75rem;
+}
+
+#TMDB {
+    width: 400px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Helvetica';
+    font-size: 12pt;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    left: 0 ; right: 0; bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #0d253f;
+    color: #eee9e5;
+}
+
+#films {
+    background-color: #0d253f;
+    color: #eee9e5;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Helvetica';
+}
+
+.film-card {
+    width: 25%;
+    background-color: #113155;
+    margin: 1rem;
+    border-radius: 1%;
+}
+
+.film-title {
+    font-size: 16pt;
+    padding: 1rem;
+}
+
+.film-title, .film-release-date {
+    text-align: center;
+    font-family: 'Helvetica';
+}
+
+.film-synopsis {
+    padding: 1rem;
+    text-align: justify;
+}
+
+.film-image {
+    text-align: center;
+    padding: 2rem;
+}
+
+img {
+    width: 75%;
+}
