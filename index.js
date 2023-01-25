@@ -31,14 +31,20 @@ searchBox.addEventListener('submit', function(e) {
     .then((data) => {
         let outputDiv = document.getElementById('films');
         let results = data.results
+
+        // clear the previous search if there was a previous search
         while (outputDiv.firstChild) {
             outputDiv.removeChild(outputDiv.firstChild)
         }
+
+        // let the user know if their search yielded no results
         if (results.length === 0) {
-            const noResults = document.createTextNode("I couldn't find your film")
+            const noResults = document.createTextNode("Your film wasn't found in the library.")
             outputDiv.appendChild(noResults)
             console.log
         }
+
+        // a successful search will be displayed on the page with divs created for each item and its related attributes
         else {
             for (let result of results) {
                 console.log(result)
@@ -66,6 +72,8 @@ searchBox.addEventListener('submit', function(e) {
                 outputDiv.appendChild(filmCard)
             }
         }
+
+        // clear out the search bar after searching
         searchBox.reset();
     })
 })
